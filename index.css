@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.app-container{
+    background-image: url("https://res.cloudinary.com/dxisy98pv/image/upload/v1711606727/jsjongmg4j0xbmxmrcwi.svg");
+    height: 30vh;
+    min-width: 100vw;
+  background-attachment: fixed;
+   
+}
+.card-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.card{
+    background-color: #ffffff;
+    min-height: 400px;
+    width: 600px; margin-top: 150px;
+    border: 2px solid #EAEAEA;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom:30px;
+}
+.card-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+   gap:10px;
+ 
+   
+}
+.title{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color:  hsl(292, 42%, 14%)
+    ;
+}
+.question-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+}
+.question{
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    color: hsl(292, 42%, 14%)
+}
+.answer{
+    font-size: 18px;
+    color:hsl(292, 16%, 49%);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    display: none;
+}
+
+@media screen and (max-width:426px){
+    .app-container{
+        background-image: url("https://res.cloudinary.com/dxisy98pv/image/upload/v1711606727/jsjongmg4j0xbmxmrcwi.svg");
+        height: 30vh;
+        min-width: 80vw;
+      background-attachment: fixed;
+       
+    }
+    .card{
+        width: 300px; 
+    }
+}
